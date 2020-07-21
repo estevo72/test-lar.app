@@ -133,9 +133,6 @@ const percentSumCategory = (category_id) => {
 
 const relatory = (transactions, categories) =>{
   let listCategories = JSON.parse(JSON.stringify(categories));
-  let debits = sumType(transactions, "DEBIT");
-  let credit = sumType(transactions, "CREDIT");
-  let balance = percent();
 
   let aux = listCategories.map((categorie)=>{
     return {
@@ -146,9 +143,9 @@ const relatory = (transactions, categories) =>{
   });
 
   let jsonObj =  {
-    "income": credit,
-    "expense": debits,
-    "balance": balance,
+    "income": sumType(transactions, "CREDIT"),
+    "expense": sumType(transactions, "DEBIT"),
+    "balance": percent(),
     "categories": aux
   }
   return jsonObj;

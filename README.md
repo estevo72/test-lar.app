@@ -1,17 +1,18 @@
 # Teste da LAR.app
 
-##Regras
-*Criar um repositório GIT incluindo este README.md e o código fonte com as soluções para as questões. Envie o link em resposta ao email que recebeu.
-*Pode utilizar qualquer linguagem pra solucionar os problemas. Aqui na LAR trabalhamos com Java, Kotlin, Javascript, mas fique à vontade para escolher qualquer linguagem de sua preferência.
-*Responda tudo que conseguir e do jeito que conseguir. Entretanto, esperamos encontrar nas soluções boas práticas de programação, clean code. Lembre-se sempre: DRY ;)
+## Regras
+* Criar um repositório GIT incluindo este README.md e o código fonte com as soluções para as questões. Envie o link em resposta ao email que recebeu.
+* Pode utilizar qualquer linguagem pra solucionar os problemas. Aqui na LAR trabalhamos com Java, Kotlin, Javascript, mas fique à vontade para escolher qualquer linguagem de sua preferência.
+* Responda tudo que conseguir e do jeito que conseguir. Entretanto, esperamos encontrar nas soluções boas práticas de programação, clean code. Lembre-se sempre: DRY ;)
 
 
-##Problema
+## Problema
 LARa é muito organizada e gostaria de entender sua situação financeira. Para isso, decidiu classificar seus gastos e entender melhor como seu dinheiro está sendo gasto.
 
 Para isso, ela obteve acesso a um JSON com as transações bancárias ocorridas em sua conta de um certo período e classificou tudo de acordo com algumas categorias que ela definiu:
 
-'''
+```
+
 categories = [
 	{ "id": 1, "name": "Receitas - Salário" },
 	{ "id": 2, "name": "Receitas - Outros" },
@@ -19,8 +20,9 @@ categories = [
 	{ "id": 4, "name": "Despesas - Alimentação" },
 	{ "id": 5, "name": "Despesas - Lazer" }
 ]
-'''
-'''
+```
+
+```
 transactions = [
    {
       "type":"DEBIT",
@@ -77,7 +79,7 @@ transactions = [
       "category_id":2
    }
 ]
-'''
+```
 
 Dadas as informações acima:
 
@@ -88,7 +90,7 @@ Crie uma função que recebe o JSON no formato acima e um parâmetro category_id
 Crie uma função que dada uma categoria retorne o percentual gasto nesta categoria em relação ao total de receitas. Percentual = (soma dos valores da categoria)/(soma dos créditos)
 Crie uma função que recebe os JSONs acima e retorne um objeto no seguinte formato:
 
-'''
+```
 {
     "income": //soma dos créditos
     "expense": //soma dos débitos
@@ -102,4 +104,4 @@ Crie uma função que recebe os JSONs acima e retorne um objeto no seguinte form
         ... //fazer isso para todas as categorias
     ]
 }lar
-'''
+```
