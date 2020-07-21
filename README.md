@@ -7,7 +7,7 @@
 
 
 ## Problema
-LARa é muito organizada e gostaria de entender sua situação financeira. Para isso, decidiu classificar seus gastos e entender melhor como seu dinheiro está sendo gasto.
+LAR.app é muito organizada e gostaria de entender sua situação financeira. Para isso, decidiu classificar seus gastos e entender melhor como seu dinheiro está sendo gasto.
 
 Para isso, ela obteve acesso a um JSON com as transações bancárias ocorridas em sua conta de um certo período e classificou tudo de acordo com algumas categorias que ela definiu:
 
@@ -103,5 +103,5 @@ Crie uma função que recebe os JSONs acima e retorne um objeto no seguinte form
         },
         ... //fazer isso para todas as categorias
     ]
-}lar
+}
 ```
